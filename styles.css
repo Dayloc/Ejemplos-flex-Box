@@ -1,0 +1,64 @@
+body {
+  background-color: #fdfbfb;
+  font-family: Arial, sans-serif;
+  color: #f0c546;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background-color: #a6a6a6;
+  align-self: center;
+  width: 800px;
+}
+#flexbox-demo {
+  margin-top: 2rem;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap; /* Para permitir múltiples líneas */
+  height: 300px; /* Contenedor alto para ver el efecto */
+  background: #e9ecef;
+  align-content: space-around; /* Puedes probar: stretch, flex-start, flex-end, center, space-between */
+  align-items: center; /* Cómo se alinean los ítems dentro de cada línea */
+  justify-content: center;/*Para alinearlos en el centro*/
+  gap: 1rem;
+}
+
+.box {
+  background: #0d6efd;
+  color: #fff;
+  width: 60px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+.tall {
+  height: 100px; /* Diferente altura para mostrar el efecto de stretch o flex-start */
+}
+
+.special {
+  align-self: flex-end; /* Solo este ítem ignora align-items */
+  background: #dc3545; /* Color diferente para verlo claro */
+}
+
+
+.flex-container2 {
+  display: flex;
+  flex-direction: column; /* Cambia a columna */
+  height: 300px; /* Contenedor alto para ver el efecto */
+  background: #e9ecef;
+  align-content: space-around; /* Puedes probar: stretch, flex-start, flex-end, center, space-between */
+  align-items: center; /* Cómo se alinean los ítems dentro de cada línea */
+  justify-content: center;/*Para alinearlos en el centro*/
+  gap: 1rem;
+  margin-bottom: 10px;
+}
