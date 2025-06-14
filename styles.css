@@ -1,7 +1,7 @@
 body {
   background-color: #fdfbfb;
   font-family: Arial, sans-serif;
-  color: #f0c546;
+
   text-align: center;
 
   display: flex;
@@ -61,4 +61,72 @@ body {
   justify-content: center;/*Para alinearlos en el centro*/
   gap: 1rem;
   margin-bottom: 10px;
+}
+.flex-container3 {
+  display: flex;
+  flex-direction: row; /* Cambia a fila */
+  height: 300px; /* Contenedor alto para ver el efecto */
+  background: #e9ecef;
+  align-content: space-around; /* Puedes probar: stretch, flex-start, flex-end, center, space-between */
+  align-items: center; /* Cómo se alinean los ítems dentro de cada línea */
+  justify-content: end;/*Para alinearlos en el centro*/
+  gap: 1rem;
+}
+
+
+
+.postcard {
+  background: white;
+  max-width: 600px;
+  margin: 3rem auto;
+  display: flex;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  margin-bottom: 50px;
+}
+
+.postcard-content {
+  flex: 2;
+}
+
+.postcard-content h2 {
+  margin-top: 0;
+}
+
+.postcard-form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 2rem;
+}
+
+.postcard-form img {
+  width: 50px;
+  margin-bottom: 1rem;
+}
+
+.postcard-form input,
+.postcard-form textarea {
+  width: 100%;
+  margin-bottom: 0.5rem;
+  border: none;
+  border-bottom: 1px solid #333;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  padding: 0.3rem;
+  background: transparent;
+  margin-bottom: 50px;
+  color: black;
+}
+
+.postcard-form button {
+  background: #ccc;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  cursor: pointer;
+}
+
+.postcard-form button:hover {
+  background: #bbb;
 }
