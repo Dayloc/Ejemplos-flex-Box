@@ -1,113 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="styles.css" />
+  <title>Document</title>
+</head>
+<body>
+  <h1>Comenzaremos por definir qué es Flex-Box</h1>
 
-    <title>Document</title>
-  </head>
-  <body>
-    <h1>Comenzaremos por definir que es Flex-Box</h1>
-
-    <div class="imagen">
-      <img src="/img/fleBox.jpg" alt="Imagen de ejemplo" />
-    </div>
-    <section id="flexbox-demo">
-      <h2>🎯 Todos los div alineados</h2>
-      <div class="flex-container">
-        <div class="box">1</div>
-        <div class="box">2</div>
-        <div class="box">3</div>
-        <div class="box">4</div>
-        <div class="box">5</div>
-      </div>
-    </section>
-    <section id="flexbox-demo2">
-      <h2>🎯 Todos los div alineados con espacio entre ellos</h2>
-      <div class="flex-container2">
-        <div class="box">1</div>
-        <div class="box">2</div>
-        <div class="box">3</div>
-        <div class="box">4</div>
-        <div class="box">5</div>
-      </div>
-    </section>
-    <section id="flexbox-demo3">
-      <h2>🎯 Todos los div alineados con espacio entre ellos y al final</h2>
-      <div class="flex-container3">
-        <div class="box">1</div>
-        <div class="box">2</div>
-        <div class="box">3</div>
-        <div class="box">4</div>
-        <div class="box">5</div>
-      </div>
-    </section>
-    <section class="postcard">
-      <div class="postcard-content">
-        <h2>My Postcard</h2>
-        <div>
-          <p>
-            Look how awesome! This is a postcard that I created using HTML5 and
-            CSS3 during my 4Geeks Academy Course!
-          </p>
-          <p>This is so cool, can't wait to start doing more stuff!</p>
-        </div>
-      </div>
-      <div class="postcard-form">
-        <img
-          src=" https://storage.googleapis.com/breathecode-asset-images/5318bde604cf5c915f94897a71b49ab2523101322ea21cb046db1e67c24fa3be.png"
-          alt="Logo"
-        />
-        <input type="text" placeholder="Some Name" />
-        <input type="email" placeholder="Some Email" />
-        <textarea placeholder="Some comment"></textarea>
-        <button>Send My Postcard</button>
-      </div>
-    </section>
-
+  <div class="container">
     <section>
       <div class="post-contenedor">
         <div class="head-post">
-          <div class="titulo"><h2>My Post Card</h2></div>
-         
-             <img
-             class="logo-img"
-          src=" https://storage.googleapis.com/breathecode-asset-images/5318bde604cf5c915f94897a71b49ab2523101322ea21cb046db1e67c24fa3be.png"
-          alt="Logo"
-        />
-         
+          <div class="titulo">
+            <h2>My Post Card</h2>
+          </div>
+          <div class="div-logo">
+            <img
+              class="logo-img"
+              src="https://storage.googleapis.com/breathecode-asset-images/5318bde604cf5c915f94897a71b49ab2523101322ea21cb046db1e67c24fa3be.png"
+              alt="Logo"
+            />
+          </div>
         </div>
 
         <div class="contenido-post">
           <div class="contenido-izq">
             <p class="texto-izq">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem quos provident voluptatem doloribus!<br> Molestias, odio maxime? Eveniet quaerat facilis consectetur repellat aliquid!<br> Dolores error quo numquam nisi molestiae obcaecati voluptate!
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem quos provident voluptatem doloribus!
+              <br>
+              Molestias, odio maxime? Eveniet quaerat facilis consectetur repellat aliquid!
+              <br>
+              Dolores error quo numquam nisi molestiae obcaecati voluptate!
             </p>
           </div>
+
           <div class="contenido-der">
-            <div>
-              <p>name:</p>
-              <p>_________________</p>
-            
+            <div class="subtitulos">
+              <p class="name">Name:</p>
+              <hr>
+              <p class="email">Email:</p>
+              <hr>
+              <p class="comment">Comment:</p>
+              <hr>
+              <br>
+              <hr>
+              <br>
+              <hr>
             </div>
-            <div>
-               <p>Email:</p>
-              <p>_________________</p>
-            </div>
-            <div>
-               <p>Comment:</p>
-              <p>_________________</p>
+
+            <div class="btn-send">
               <button class="send">Send My PostCard</button>
             </div>
           </div>
         </div>
-       
       </div>
     </section>
+  </div>
 
-    <section>
-     
-    </section>
-  </body>
+  <div class="ejemplo">
+    <h1>Haremos un contenedor de colores</h1>
+<section>
+  <div class="contenedor-prueba">
+<section class="section1">
+  <div class="d-1">caja1</div>
+  <div class="d-2">caja2</div>
+  <div class="d-3">caja3</div>
+</section>
+<section class="section2">
+  <div>
+     <div class="d-4">caja1</div>
+     <div class="d-5">caja2</div>
+     <div class="d-6">caja3</div>
+  </div>
+</section>
+<section class="section3">
+
+  <div class="d-7">caja1</div>
+  <div class="d-8">caja2</div>
+  <div class="d-9">caja3</div>
+
+</section>
+<section class="section4">
+   <div class="d-10">caja1</div>
+  <div class="d-11">caja2</div>
+  <div class="d-12">caja3</div>
+</section>
+
+
+  </div>
+</section>
+
+
+
+
+  </div>
+
+
+<div>
+<h1>Haremos un colage</h1>
+
+<div class="colage-container">
+
+<div class="head-colage">
+<div class="titulo">hola</div>
+<div class="icono">que tal</div>
+
+</div>
+<div class="body-colage">
+  <div class="b-izq">
+    <div class="b-arriba">iaquierda 1</div>
+    <div class="b-abaj">iaquierda 2</div>
+  </div>
+  <div class="b-derecho">
+    <div class="lado-derecho"></div>
+    <div class="lado-derecho"></div>
+    <div class="lado-derecho"></div>
+  </div>
+
+</div>
+<div class="footer-colage">
+  <div class="footer-colage1"></div>
+</div>
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+</div>
+
+ 
+</body>
 </html>
