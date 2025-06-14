@@ -76,7 +76,7 @@ body {
 
 
 .postcard {
-  background: white;
+  background: rgb(213, 211, 211);
   max-width: 600px;
   margin: 3rem auto;
   display: flex;
@@ -120,13 +120,99 @@ body {
 }
 
 .postcard-form button {
-  background: #ccc;
+  background: #0057ed;
   border: none;
   padding: 0.5rem 1rem;
   font-family: 'Comic Sans MS', cursive, sans-serif;
   cursor: pointer;
+  color: wheat;
 }
 
 .postcard-form button:hover {
-  background: #bbb;
+  background: #a994ee;
+}
+/* esta va ha ser mi caja grande*/
+.post-contenedor{
+   background: rgb(213, 211, 211);
+  max-width: 600px;
+  height: 600px;
+  margin: 3rem auto;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  margin-bottom: 50px;
+
+}
+/*Este va ha ser mi head*/
+.head-post{
+  
+  max-width: 550px;
+  height: 100px;
+ justify-content: space-between;
+  display: flex;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  margin-bottom: 10px;
+}
+.contenido-post{
+  flex-direction: row;
+
+  max-width: 100%;
+  height: 70%;  
+  display: flex;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  margin-bottom: 10px;
+}
+.footer-post{
+  
+  max-width: 550px;
+  height: 100px;
+  
+  display: flex;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  margin-bottom: 10px;
+}
+.contenido-izq{
+  width: 70%;
+}
+.contenido-der{
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.send{
+  border-radius: 15px;
+  background: rgb(109, 105, 234);
+  width: 100px;
+color: wheat;}
+
+.texto-izq{
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  font-size: 20px;
+  color: black;
+}
+.tituo{
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  font-size: 30px;
+  color: black;
+  width: 100%  ;
+  align-self: center;
+}
+.logo{
+  width: 30%;
+  height: 100px;
+  border-radius: 50%;
+  align-items: end;
+}
+.logo-img{
+  width: 50px;
+  height: 50px;
+  align-self: flex-center;
+ 
+  container: cover;
 }
