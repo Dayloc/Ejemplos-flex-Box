@@ -1,54 +1,242 @@
+/* === Base === */
 body {
   background-color: #fdfbfb;
   font-family: Arial, sans-serif;
-  text-align: center;
   display: flex;
   flex-direction: column;
-  align-items: center; /* centra todo horizontalmente */
+  align-items: center;
+  justify-content: flex-start; /* scroll natural */
+  min-height: 100vh;
   margin: 0;
-  padding: 20px; /* un respiro */
+  padding: 20px;
 }
 
+h1 {
+  text-align: center;
+}
+
+.def {
+  max-width: 600px;
+  margin: 20px 0;
+}
+
+.definicion {
+  text-align: justify;
+}
+
+/* === Ejemplo === */
+.ejemplo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.contenedor-prueba {
+  width: 600px;
+  height: 600px;
+  background-color: blanchedalmond;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Secciones dentro de contenedor prueba */
+.section1, .section2, .section3, .section4 {
+  width: 100%;
+  height: 25%;
+  border: 2px solid black;
+  display: flex;
+  gap: 10px;
+}
+
+.section2 {
+  flex-direction: column;
+}
+
+.section3 {
+  flex-direction: row;
+}
+
+.section4 {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.d-1, .d-2, .d-3,
+.d-7, .d-8, .d-9 {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.d-1 { background: rgb(157, 225, 240); }
+.d-2 { background: rgb(170, 241, 105); }
+.d-3 { background: rgb(209, 105, 241); }
+.d-4 { background: rgb(157, 225, 240); height: 33%; }
+.d-5 { background: rgb(170, 241, 105); height: 33%; }
+.d-6 { background: rgb(209, 105, 241); height: 33%; }
+.d-7 { background: rgb(157, 225, 240); }
+.d-8 { background: rgb(170, 241, 105); }
+.d-9 { background: rgb(209, 105, 241); }
+.d-10, .d-11, .d-12 {
+  width: 100%;
+  height: 100%;
+}
+.d-10 { background: rgb(157, 225, 240); }
+.d-11 { background: rgb(170, 241, 105); }
+.d-12 { background: rgb(209, 105, 241); }
+
+/* === Colage === */
+.colage-container {
+  width: 600px;
+  height: 600px;
+  background: black;
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0;
+}
+
+.head-colage {
+  display: flex;
+  align-items: center;
+  height: 15%;
+  gap: 25px;
+}
+
+.titulo {
+  margin-right: auto;
+  background: rgb(231, 143, 143);
+  padding: 5px;
+  width: 70%;
+}
+
+.icono {
+  background: #a994ee;
+  padding: 5px;
+  width: 30%;
+}
+
+.body-colage {
+  display: flex;
+  width: 98%;
+  height: 70%;
+  background: rgb(128, 246, 150);
+  gap: 25px;
+  padding: 5px;
+}
+
+.b-izq {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  background: rgb(10, 0, 0);
+  padding: 5px;
+}
+
+.b-arriba {
+  height: 70%;
+  background: cadetblue;
+}
+
+.b-abaj {
+  height: 30%;
+  background: aquamarine;
+}
+
+.b-derecho {
+  width: 30%;
+  background: burlywood;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  padding: 5px;
+}
+
+.lado-derecho {
+  width: 80%;
+  height: 32%;
+  background: #7e67ef;
+}
+
+.footer-colage {
+  height: 15%;
+  width: 100%;
+  background: rgb(158, 81, 13);
+  padding: 5px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  
+
+}
+
+.footer-colage1 {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  background: blue;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+/* === Post Card === */
 .container {
   max-width: 600px;
   width: 100%;
-  
-  height:  400px;
-  max-height: 700px;
-  background-color: aquamarine;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  margin: 20px 0;
+  background: aquamarine;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
 }
 
 .head-post {
-  background-color: rgb(223, 249, 151);
-  max-width: 100%;
   display: flex;
   justify-content: space-between;
-  align-items: center; /* centra verticalmente */
+  align-items: center;
+  background: rgb(223, 249, 151);
   padding: 2rem;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-  margin-bottom: 10px;
   height: 40px;
+}
 
+.titulo h2 {
+  margin: 0;
+}
+
+.div-logo {
+  background: #7e67ef;
+  padding: 3px;
+  border-radius: 50%;
+}
+
+.logo-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
 }
 
 .contenido-post {
   display: flex;
   justify-content: space-between;
-  gap: 10px; /* separa izq y der */
-  background-color: rgb(208, 247, 210);
+  gap: 10px;
+  background: rgb(208, 247, 210);
   padding: 1rem;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-  height: 300px;
 }
 
 .contenido-izq {
   width: 60%;
-  overflow: auto;
-  padding: 5px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
   background: #a994ee;
   text-align: justify;
+  overflow: auto;
+  padding: 5px;
 }
 
 .contenido-der {
@@ -58,271 +246,37 @@ body {
   justify-content: space-between;
   overflow: auto;
   padding: 5px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-  text-align: left; /* alinea texto a la izquierda */
-}
-
-.subtitulos {
-  width: 100%;
+  text-align: left;
 }
 
 .btn-send {
-  align-self: center; /* asegura alineado a la izquierda */
+  align-self: center;
 }
 
 .send {
   border-radius: 10px;
   background: rgb(109, 105, 234);
   color: wheat;
-  width: auto;
   padding: 10px 20px;
   border: none;
   cursor: pointer;
 }
 
-.titulo h2 {
-  margin: 0;
-}
-
-.logo-img {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-}
-
-.name, .email, .comment {
-  margin: 10px 0;
-}
-
-.div-logo {
-  background-color: #7e67ef;
-  padding: 3px;
-  border-radius: 50%;
-}
-
-
-.ejemplo{
-  margin: 50px;
-}
-
-.contenedor-prueba{
+/* === Padre === */
+.padre {
   width: 600px;
-  height: 600px;
-  background-color: blanchedalmond;
-}
-.section1{
-  width: 100%;
-  height:25% ;
-  background-color: rgb(237, 151, 90);
-  display: flex;/* por defecto viene en columnas*/
-  flex-direction: row;
-
-
-}
-.section2{
-  width: 100%;
-  height:20% ;
-  background-color: rgb(242, 100, 45);
+  height: 300px;
+  background: rgb(172, 218, 126);
   display: flex;
-  flex-direction: column;
-  padding: 1px;
-
-}
-.section3{
-  width: 100%;
-  height:25% ;
-  background-color: rgb(237, 151, 90);
-  display: flex;
-  flex-direction: row;
-  
-}
-
-.section4{
-   width: 100%;
-  height:25% ;
-  background-color: rgb(16, 14, 14);
-  display: flex;
-  flex-direction: column;
-   justify-content: center;  /* opcional: centra grupo verticalmente */
-  align-items: center;      /* opcional: centra horizontalmente */
-  gap: 20px; /* 💥 clave: separación entre hijos */
-}
-
-
-/*Primer ejemplo*/
-.d-1{
-  background-color: rgb(157, 225, 240);
-  flex: 1;
-}
-.d-2{
-  background-color:rgb(170, 241, 105);
-  flex: 1;
-}
-.d-3{
-  background-color:rgb(209, 105, 241);
-  flex: 1;
-}
-
-/*Segundo ejemplo*/
-.d-4{
-  background-color: rgb(157, 225, 240);
-    width: 100%;
-    height: 70%;
-    
-}
-.d-5{
-  background-color:rgb(170, 241, 105);
-   width: 100%;
-   height: 80%;
-}
-.d-6{
-  background-color:rgb(209, 105, 241);
-  width: 100%;
-  height: 70%;
-}
-.section1, .section2, .section3, .section4 {
-  border: 5px solid black;
-}
-/*tercer ejemplo observar que solo alinea dentro de los hijos*/
-.d-7{
-  background-color: rgb(157, 225, 240);
-  flex: 1;
-  height: 100%;
-  display: flex;
-  align-items: center; 
-  justify-content: center; 
-}
-.d-8{
-  background-color:rgb(170, 241, 105);
-  flex: 1;
-   height: 100%;
-   display: flex;
-   align-items: center; 
-   justify-content: center; 
-}
-.d-9{
-  background-color:rgb(209, 105, 241);
-  flex: 1;
-   height: 100%;
-   display: flex;
-   align-items: center; 
-   justify-content: center; 
-}
-
-/* ejemplo 4*/
-.d-10{
-  background-color: rgb(157, 225, 240);
-    width: 100%;
-    height: 100%;
-    
-}
-.d-11{
-  background-color:rgb(170, 241, 105);
-   width: 100%;
-   height: 100%;
-}
-.d-12{
-  background-color:rgb(209, 105, 241);
-  width: 100%;
-  height: 100%;
-}
-
-
-/* seccion Colage*/
-.colage-container{
-  width: 600px;
-  height: 600px;
-  background-color: black;
-  overflow: hidden;
-
-}
-
-.head-colage {
-  display: flex;
-  flex-direction: row;
-  align-items: center; 
-  height: 15%; 
-    gap: 25px;
-}
-
-.titulo {
-  margin-right: auto;   /* empuja a la izquierda */
-  text-align: left;
-  padding: 5px;
-  width: 70%;
-  height: auto;         /* mejor que height fijo: deja que el contenido fluya */
-  background-color: rgb(231, 143, 143);
-}
-
-.icono{
-  padding: 5px;
-  background-color: #a994ee;
-  width: 30%;
-  height: auto;
-  margin-left: auto;
-
-}
-
-.body-colage{
-  display: flex;
-    gap: 25px;
-    padding: 5px;
-
-}
-
-
-/*Body-Colage*/
-.body-colage{
-   width: 98%;
-  height: 70%;
-  background-color: rgb(128, 246, 150);
-    gap: 25px;
-    text-align: center;
-}
-.b-izq{
-  display: flex;
-  flex-direction: column;
-  width: 70%;
-  background-color: rgb(10, 0, 0);
-  gap: 25px;
-  justify-content: space-around;
-  padding: 5px;
-}
-.b-derecho{
-  width: 30%;
-  
-}
-
-.b-arriba{
-  height: 70%;
-  background-color: cadetblue;
-}
-.b-derecho{
-  background-color: burlywood;
-  padding: 5px;
-  display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 25px;
-}
-.b-abaj{
-  background-color: aquamarine;
-  height: 30%;
+  margin: 20px 0;
 }
 
-.footer-colage{
-    width: 100%;
-  height: 14%;
-  background-color: rgb(158, 81, 13);
-  padding: 5px;
-}
-.footer-colage1{
-  background-color: blue;
-  height: 80%;
-}
-.lado-derecho{
-  width: 80%;
-  height: 32%;
-  background-color: #7e67ef;
+.hijos1, .hijos2 {
+  width: 100px;
+  height: 100px;
+  background: #333;
+  margin: 0 10px;
+  color: antiquewhite;
 }

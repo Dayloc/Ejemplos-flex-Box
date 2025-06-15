@@ -4,141 +4,107 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <link rel="stylesheet" href="styles.css" />
-  <title>Document</title>
+  <title>Flexbox Ejemplo</title>
 </head>
 <body>
   <h1>Comenzaremos por definir qué es Flex-Box</h1>
 
-  <div class="container">
-    <section>
-      <div class="post-contenedor">
-        <div class="head-post">
-          <div class="titulo">
-            <h2>My Post Card</h2>
-          </div>
-          <div class="div-logo">
-            <img
-              class="logo-img"
-              src="https://storage.googleapis.com/breathecode-asset-images/5318bde604cf5c915f94897a71b49ab2523101322ea21cb046db1e67c24fa3be.png"
-              alt="Logo"
-            />
-          </div>
-        </div>
-
-        <div class="contenido-post">
-          <div class="contenido-izq">
-            <p class="texto-izq">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem quos provident voluptatem doloribus!
-              <br>
-              Molestias, odio maxime? Eveniet quaerat facilis consectetur repellat aliquid!
-              <br>
-              Dolores error quo numquam nisi molestiae obcaecati voluptate!
-            </p>
-          </div>
-
-          <div class="contenido-der">
-            <div class="subtitulos">
-              <p class="name">Name:</p>
-              <hr>
-              <p class="email">Email:</p>
-              <hr>
-              <p class="comment">Comment:</p>
-              <hr>
-              <br>
-              <hr>
-              <br>
-              <hr>
-            </div>
-
-            <div class="btn-send">
-              <button class="send">Send My PostCard</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+  <div class="def">
+    <p class="definicion">
+      Flexbox (o Flexible Box Layout) es un módulo de CSS que facilita la creación de diseños de contenedores flexibles y distribución de elementos dentro de un contenedor, incluso cuando su tamaño es dinámico o desconocido.
+      <br><br>
+      En otras palabras, Flexbox te permite alinear, distribuir y ordenar elementos de forma flexible y adaptable en una sola dimensión: fila (horizontal) o columna (vertical).
+    </p>
   </div>
 
   <div class="ejemplo">
     <h1>Haremos un contenedor de colores</h1>
-<section>
-  <div class="contenedor-prueba">
-<section class="section1">
-  <div class="d-1">caja1</div>
-  <div class="d-2">caja2</div>
-  <div class="d-3">caja3</div>
-</section>
-<section class="section2">
-  <div>
-     <div class="d-4">caja1</div>
-     <div class="d-5">caja2</div>
-     <div class="d-6">caja3</div>
-  </div>
-</section>
-<section class="section3">
-
-  <div class="d-7">caja1</div>
-  <div class="d-8">caja2</div>
-  <div class="d-9">caja3</div>
-
-</section>
-<section class="section4">
-   <div class="d-10">caja1</div>
-  <div class="d-11">caja2</div>
-  <div class="d-12">caja3</div>
-</section>
-
-
-  </div>
-</section>
-
-
-
-
+    <div class="contenedor-prueba">
+      <section class="section1">
+        <div class="d-1">caja1</div>
+        <div class="d-2">caja2</div>
+        <div class="d-3">caja3</div>
+      </section>
+      <section class="section2">
+        <div class="d-4">caja1</div>
+        <div class="d-5">caja2</div>
+        <div class="d-6">caja3</div>
+      </section>
+      <section class="section3">
+        <div class="d-7">caja1</div>
+        <div class="d-8">caja2</div>
+        <div class="d-9">caja3</div>
+      </section>
+      <section class="section4">
+        <div class="d-10">caja1</div>
+        <div class="d-11">caja2</div>
+        <div class="d-12">caja3</div>
+      </section>
+    </div>
   </div>
 
-
-<div>
-<h1>Haremos un colage</h1>
-
-<div class="colage-container">
-
-<div class="head-colage">
-<div class="titulo">hola</div>
-<div class="icono">que tal</div>
-
-</div>
-<div class="body-colage">
-  <div class="b-izq">
-    <div class="b-arriba">iaquierda 1</div>
-    <div class="b-abaj">iaquierda 2</div>
+  <div class="colage-container">
+    <div class="head-colage">
+      <div class="titulo">Hola</div>
+      <div class="icono">Qué tal</div>
+    </div>
+    <div class="body-colage">
+      <div class="b-izq">
+        <div class="b-arriba">Izquierda 1</div>
+        <div class="b-abaj">Izquierda 2</div>
+      </div>
+      <div class="b-derecho">
+        <div class="lado-derecho">Derecha 1</div>
+        <div class="lado-derecho">Derecha 2</div>
+        <div class="lado-derecho">Derecha 3</div>
+      </div>
+    </div>
+    <div class="footer-colage">
+      <div class="footer-colage1">Footer</div>
+    </div>
   </div>
-  <div class="b-derecho">
-    <div class="lado-derecho"></div>
-    <div class="lado-derecho"></div>
-    <div class="lado-derecho"></div>
+
+  <div class="container">
+    <div class="head-post">
+      <div class="titulo">
+        <h2>My Post Card</h2>
+      </div>
+      <div class="div-logo">
+        <img
+          class="logo-img"
+          src="https://storage.googleapis.com/breathecode-asset-images/5318bde604cf5c915f94897a71b49ab2523101322ea21cb046db1e67c24fa3be.png"
+          alt="Logo"
+        />
+      </div>
+    </div>
+
+    <div class="contenido-post">
+      <div class="contenido-izq">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem quos provident voluptatem doloribus!
+          <br>
+          Molestias, odio maxime? Eveniet quaerat facilis consectetur repellat aliquid!
+          <br>
+          Dolores error quo numquam nisi molestiae obcaecati voluptate!
+        </p>
+      </div>
+
+      <div class="contenido-der">
+        <div class="subtitulos">
+          <p class="name">Name:</p><hr>
+          <p class="email">Email:</p><hr>
+          <p class="comment">Comment:</p><hr><br><hr><br><hr>
+        </div>
+        <div class="btn-send">
+          <button class="send">Send My PostCard</button>
+        </div>
+      </div>
+    </div>
   </div>
 
-</div>
-<div class="footer-colage">
-  <div class="footer-colage1"></div>
-</div>
-
-
-
-
-
-
-
-
-
-
-</div>
-
-
-
-</div>
-
- 
+  <div class="padre">
+    <div class="hijos1">Hijo 1</div>
+    <div class="hijos2">Hijo 2</div>
+  </div>
 </body>
 </html>
